@@ -1,0 +1,176 @@
+/* Reset + Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: rgb(255, 82, 0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header .Logo img {
+    width: 120px;
+    height: auto;
+}
+
+header ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #ffe9dd;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  background: url('../images/bg.png') no-repeat center center;
+  background-size: cover;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  color: white;
+  overflow: hidden;
+}
+
+.hero-section .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero-content p {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: white;
+}
+
+
+/* Input Field */
+input#location {
+    padding: 1rem;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 400px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+/* Search Button */
+.sc-pKqro.hansPC {
+    background-color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-width: 400px;
+    width: fit-content;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.sc-pKqro.hansPC:hover {
+    transform: scale(1.05);
+}
+
+.sc-aXZVg.iGFOtL {
+    color: #000000;
+    font-weight: 600;
+    font-size: 1rem;
+    text-shadow: none; /* Make sure there's no shadow */
+}
+
+/* Wrapper for input + search button */
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+/* Make sure the input and button take space nicely */
+.search-container input {
+  flex: 1;
+}
+
+/* Adjust search button size */
+.sc-pKqro.hansPC {
+  background-color: white;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  white-space: nowrap;
+}
+
+
+/* Align Search Box and Input Side by Side */
+main section:first-of-type input#location,
+main section:first-of-type .sc-pKqro.hansPC {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+main section:first-of-type .search-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Second Section */
+main section:nth-of-type(2) {
+    padding: 4rem 3rem;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(255, 82, 0);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
